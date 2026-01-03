@@ -1,0 +1,130 @@
+.login-container {
+  display: flex;
+  min-height: 100vh;
+  font-family: "Poppins", sans-serif;
+}
+
+.form-section {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #ffe0ec, #fff5f8);
+  animation: gradientMove 6s ease infinite;
+}
+
+@keyframes gradientMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.form-card {
+  background: #ffffff;
+  padding: 2.5rem;
+  border-radius: 16px;
+  width: 100%;
+  max-width: 380px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.form-card h1 {
+  text-align: center;
+  color: #d63384;
+  margin-bottom: 1.5rem;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+.input-group label {
+  font-size: 0.9rem;
+  margin-bottom: 0.3rem;
+}
+
+.input-group input {
+  padding: 0.7rem;
+  border-radius: 8px;
+  border: 1px solid #f2a1c2;
+  outline: none;
+}
+
+.input-group input:focus {
+  border-color: #d63384;
+}
+
+.form-options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.85rem;
+  margin-bottom: 1.2rem;
+}
+
+.forgot {
+  color: #d63384;
+  text-decoration: none;
+}
+
+.primary-btn {
+  width: 100%;
+  padding: 0.8rem;
+  background: #ff4d88; /* Strawberry Pink */
+  border: none;
+  color: #ffffff;
+  font-size: 1rem;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.primary-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(255, 77, 136, 0.4);
+}
+
+.divider {
+  text-align: center;
+  margin: 1.2rem 0;
+  color: #aaa;
+}
+
+.social-buttons button {
+  width: 100%;
+  padding: 0.7rem;
+  margin-bottom: 0.6rem;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.google-btn {
+  background: #ffffff;
+  border: 1px solid #ddd;
+}
+
+.apple-btn {
+  background: #000000;
+  color: #ffffff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .login-container {
+    flex-direction: column;
+  }
+
+  .image-section {
+    height: 200px;
+  }
+}
